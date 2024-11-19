@@ -86,7 +86,7 @@ def create_order():
 
     # Sign the JWT for 'trade' scope
     #signature = sign_jwt(scope='trade', kid='f052ea09-f049-4023-aadf-32979ca0beb0')
-    signature = sign_jwt(scope='trades', kid='ba8a9e3f-8b72-418e-8f32-2155512603c3')
+    signature = sign_jwt(scope='trade', kid='ba8a9e3f-8b72-418e-8f32-2155512603c3')
 
     # Create the order payload
     #"price": "100000",
@@ -111,7 +111,7 @@ def get_scope():
 
     # Sign the JWT for 'trade' scope
     #signature = sign_jwt(scope='read', kid='b18da364-bd1e-4bb0-ba11-e6c1a4e0ebb7')
-    signature = sign_jwt(scope='trades', kid='ba8a9e3f-8b72-418e-8f32-2155512603c3')
+    signature = sign_jwt(scope='trade', kid='ba8a9e3f-8b72-418e-8f32-2155512603c3')
 
 
     # Make the POST request to create the order
